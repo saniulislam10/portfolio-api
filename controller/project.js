@@ -74,33 +74,33 @@ exports.getAll = async (req, res, next) => {
         } else {
             dataDoc = Project.find();
         }
-        const pumps = await dataDoc;
+        const projects = await dataDoc;
 
 
         // Final Response
         res.status(200).json({
             message: "Success",
-            data: pumps
+            data: projects
         });
     } catch (err) {
+        console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
             err.message = "Something went wrong on database operation!";
         }
-        console.log(err);
         next(err);
     }
 };
 exports.get = async (req, res, next) => {
 
     try {
-        const pumps = await Project.find();
+        const projects = await Project.find();
 
 
         // Final Response
         res.status(200).json({
             message: "Success",
-            data: pumps
+            data: projects
         });
     } catch (err) {
         if (!err.statusCode) {
