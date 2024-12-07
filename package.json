@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this project is build for serving the pump management purpose",
   "main": "app.js",
   "scripts": {
