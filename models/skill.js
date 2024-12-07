@@ -23,7 +23,7 @@ const skillSchema = new Schema({
     iconUrl: {
         type: String,
         required: false,
-        match: [/^https?:\/\/\S+\.\S+$/, "Please enter a valid URL for the icon"],
+        // match: [/^https?:\/\/\S+\.\S+$/, "Please enter a valid URL for the icon"],
     },
     description: {
         type: String,
