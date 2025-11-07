@@ -31,6 +31,11 @@ const projectSchema = new Schema({
         required: true,
         match: [/^https?:\/\/\S+\.\S+$/, "Please enter a valid URL"],
     },
+    repoUrl: {
+        type: String,
+        required: true,
+        match: [/^https?:\/\/\S+\.\S+$/, "Please enter a valid URL"],
+    },
     imageUrl: {
         type: String,
         required: false,
